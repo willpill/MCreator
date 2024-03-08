@@ -43,8 +43,6 @@ public class MainToolBar extends JToolBar {
 		pluginToolbarRight.setMargin(new Insets(0, 0, 0, 0));
 		pluginToolbarRight.setFloatable(false);
 
-		add(new JEmptyBox(4, 4));
-
 		add(mcreator.actionRegistry.createMCItemTexture);
 		add(mcreator.actionRegistry.createAnimatedTexture);
 
@@ -104,8 +102,6 @@ public class MainToolBar extends JToolBar {
 		addSeparator(new Dimension(10, 4));
 
 		add(mcreator.actionRegistry.exportToJAR);
-
-		add(new JEmptyBox(4, 4));
 	}
 
 	/**
@@ -125,7 +121,7 @@ public class MainToolBar extends JToolBar {
 	}
 
 	private static JButton decorateToolbarButton(JButton button) {
-		button.setBorder(BorderFactory.createEmptyBorder(8, 8, 8, 8));
+		button.setBorder(BorderFactory.createEmptyBorder(9, 9, 9, 9));
 		button.addMouseListener(new MouseAdapter() {
 			@Override public void mouseEntered(MouseEvent mouseEvent) {
 				super.mouseEntered(mouseEvent);
