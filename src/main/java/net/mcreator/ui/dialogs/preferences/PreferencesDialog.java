@@ -62,6 +62,9 @@ public class PreferencesDialog extends MCreatorDialog {
 		this.parent = parent;
 
 		setModal(true);
+		getRootPane().putClientProperty("apple.awt.fullWindowContent", true);
+		getRootPane().putClientProperty("apple.awt.transparentTitleBar", true);
+		getRootPane().putClientProperty("apple.awt.windowTitleVisible", false);
 		setTitle(L10N.t("dialog.preferences.title_mcreator"));
 
 		sections.setBackground(getBackground());
@@ -85,7 +88,7 @@ public class PreferencesDialog extends MCreatorDialog {
 		spne.setContinuousLayout(true);
 		spne.setDividerLocation(150);
 		spne.setDividerSize(2);
-		spne.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Theme.current().getAltBackgroundColor()));
+		spne.setBorder(BorderFactory.createMatteBorder(30, 0, 1, 0, Theme.current().getBackgroundColor()));
 		add("Center", spne);
 
 		sections.setBackground(Theme.current().getBackgroundColor());

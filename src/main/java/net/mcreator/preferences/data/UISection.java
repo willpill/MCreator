@@ -36,6 +36,7 @@ public class UISection extends PreferencesSection {
 	public PreferencesEntry<Locale> language;
 	public ColorEntry interfaceAccentColor;
 	public StringEntry backgroundSource;
+	public StringEntry macOSTitleColor;
 	public BooleanEntry usemacOSMenuBar;
 	public BooleanEntry useNativeFileChooser;
 	public BooleanEntry expandSectionsByDefault;
@@ -51,6 +52,8 @@ public class UISection extends PreferencesSection {
 		interfaceAccentColor = addEntry(new ColorEntry("interfaceAccentColor", ColorScheme.MAIN_TINT_DEFAULT));
 		backgroundSource = addEntry(
 				new StringEntry("backgroundSource", "All", "All", "Current theme", "Custom", "None"));
+		macOSTitleColor = addEntry(
+				new StringEntry("macOSTitleColor", "System", "System", "Dark", "Light"));
 		usemacOSMenuBar = addEntry(new BooleanEntry("useMacOSMenuBar", true));
 		useNativeFileChooser = addEntry(new BooleanEntry("useNativeFileChooser", OS.getOS() == OS.WINDOWS));
 		expandSectionsByDefault = addEntry(new BooleanEntry("expandSectionsByDefault", false));

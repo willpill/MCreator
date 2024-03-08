@@ -76,6 +76,17 @@ public class Launcher {
 		System.setProperty("sun.java2d.opengl",
 				Boolean.toString(PreferencesManager.PREFERENCES.ui.use2DAcceleration.get()));
 		System.setProperty("sun.java2d.d3d", "false");
+		switch (PreferencesManager.PREFERENCES.ui.macOSTitleColor.get()) {
+		case "System":
+			System.setProperty("apple.awt.application.appearance", "system");
+			break;
+		case "Light":
+			System.setProperty("apple.awt.application.appearance", "NSAppearanceNameAqua");
+			break;
+		case "Dark":
+			System.setProperty("apple.awt.application.appearance", "NSAppearanceNameDarkAqua");
+			break;
+		}
 
 		// Init JFX Toolkit
 		ThreadUtil.runOnSwingThreadAndWait(JFXPanel::new);
