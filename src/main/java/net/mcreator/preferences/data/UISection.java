@@ -53,7 +53,7 @@ public class UISection extends PreferencesSection {
 		backgroundSource = addEntry(
 				new StringEntry("backgroundSource", "All", "All", "Current theme", "Custom", "None"));
 		macOSTitleColor = addEntry(
-				new StringEntry("macOSTitleColor", "System", "System", "Dark", "Light"));
+				new StringEntry("macOSTitleColor", "Current theme", "Current theme", "Light", "Dark"));
 		usemacOSMenuBar = addEntry(new BooleanEntry("useMacOSMenuBar", true));
 		useNativeFileChooser = addEntry(new BooleanEntry("useNativeFileChooser", OS.getOS() != OS.LINUX));
 		expandSectionsByDefault = addEntry(new BooleanEntry("expandSectionsByDefault", false));

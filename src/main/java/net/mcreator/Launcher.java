@@ -77,8 +77,10 @@ public class Launcher {
 				Boolean.toString(PreferencesManager.PREFERENCES.ui.use2DAcceleration.get()));
 		System.setProperty("sun.java2d.d3d", "false");
 		switch (PreferencesManager.PREFERENCES.ui.macOSTitleColor.get()) {
-		case "System":
-			System.setProperty("apple.awt.application.appearance", "system");
+		case "Current theme":
+			if (PreferencesManager.PREFERENCES.hidden.uiTheme.get().equals("default_light"))
+				System.setProperty("apple.awt.application.appearance", "NSAppearanceNameAqua");
+			else System.setProperty("apple.awt.application.appearance", "NSAppearanceNameDarkAqua");
 			break;
 		case "Light":
 			System.setProperty("apple.awt.application.appearance", "NSAppearanceNameAqua");
