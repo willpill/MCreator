@@ -310,7 +310,7 @@ import java.util.stream.Collectors;
 					if (!currentTab.equals("mods")) {
 						g.drawString(L10N.t("workspace.elements.list.search_list"), 8, 19);
 					} else {
-						g.drawString(L10N.t("workspace.elements.list.search_folder"), 8, 19);
+						g.drawString(L10N.t("workspace.elements.list.search_folder"), 8, 16);
 					}
 				}
 			}

@@ -55,7 +55,7 @@ public class UISection extends PreferencesSection {
 		macOSTitleColor = addEntry(
 				new StringEntry("macOSTitleColor", "System", "System", "Dark", "Light"));
 		usemacOSMenuBar = addEntry(new BooleanEntry("useMacOSMenuBar", true));
-		useNativeFileChooser = addEntry(new BooleanEntry("useNativeFileChooser", OS.getOS() == OS.WINDOWS));
+		useNativeFileChooser = addEntry(new BooleanEntry("useNativeFileChooser", OS.getOS() != OS.LINUX));
 		expandSectionsByDefault = addEntry(new BooleanEntry("expandSectionsByDefault", false));
 		use2DAcceleration = addEntry(new BooleanEntry("use2DAcceleration", false));
 		autoReloadTabs = addEntry(new BooleanEntry("autoReloadTabs", true));
