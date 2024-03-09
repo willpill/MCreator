@@ -18,10 +18,10 @@
 
 package net.mcreator.ui;
 
-import net.mcreator.ui.component.JEmptyBox;
 import net.mcreator.ui.laf.themes.Theme;
 
 import javax.swing.*;
+import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
@@ -32,7 +32,9 @@ public class MainToolBar extends JToolBar {
 	private final JToolBar pluginToolbarRight = new JToolBar();
 
 	MainToolBar(MCreator mcreator) {
-		setBorder(BorderFactory.createMatteBorder(1, 0, 1, 0, Theme.current().getSecondAltBackgroundColor()));
+		Border matteBorder = BorderFactory.createMatteBorder(0, 0, 1, 0, Theme.current().getAltBackgroundColor());
+		Border emptyBorder = BorderFactory.createEmptyBorder(1, 7, 6, 7);
+		setBorder(BorderFactory.createCompoundBorder(matteBorder, emptyBorder));
 		setFloatable(false);
 
 		pluginToolbarLeft.setBorder(BorderFactory.createEmptyBorder());
@@ -46,7 +48,7 @@ public class MainToolBar extends JToolBar {
 		add(mcreator.actionRegistry.createMCItemTexture);
 		add(mcreator.actionRegistry.createAnimatedTexture);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.importBlockTexture);
 		add(mcreator.actionRegistry.importItemTexture);
@@ -54,18 +56,18 @@ public class MainToolBar extends JToolBar {
 		add(mcreator.actionRegistry.importScreenTexture);
 		add(mcreator.actionRegistry.importParticleTexture);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.importSound);
 		add(mcreator.actionRegistry.importStructure);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.importJavaModel);
 		add(mcreator.actionRegistry.importJSONModel);
 		add(mcreator.actionRegistry.importOBJModel);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.openMaterialPackMaker);
 		add(mcreator.actionRegistry.openOrePackMaker);
@@ -73,10 +75,8 @@ public class MainToolBar extends JToolBar {
 		add(mcreator.actionRegistry.openArmorPackMaker);
 		add(mcreator.actionRegistry.openWoodPackMaker);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 		add(mcreator.actionRegistry.setCreativeTabItemOrder);
-
-		addSeparator(new Dimension(10, 4));
 
 		add(pluginToolbarLeft);
 
@@ -84,22 +84,20 @@ public class MainToolBar extends JToolBar {
 
 		add(pluginToolbarRight);
 
-		addSeparator(new Dimension(10, 4));
-
 		add(mcreator.actionRegistry.workspaceSettings);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.regenerateCode);
 		add(mcreator.actionRegistry.buildWorkspace);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.runClient);
 		add(mcreator.actionRegistry.runServer);
 		add(mcreator.actionRegistry.cancelGradleTaskAction);
 
-		addSeparator(new Dimension(10, 4));
+		addSeparator();
 
 		add(mcreator.actionRegistry.exportToJAR);
 	}
@@ -121,7 +119,6 @@ public class MainToolBar extends JToolBar {
 	}
 
 	private static JButton decorateToolbarButton(JButton button) {
-		button.setBorder(BorderFactory.createEmptyBorder(9, 9, 9, 9));
 		button.addMouseListener(new MouseAdapter() {
 			@Override public void mouseEntered(MouseEvent mouseEvent) {
 				super.mouseEntered(mouseEvent);
