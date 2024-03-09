@@ -250,8 +250,6 @@ public abstract class ModElementGUI<GE extends GeneratableElement> extends ViewB
 
 			JButton save = L10N.button("elementgui.save_mod_element");
 			save.setMargin(new Insets(1, 40, 1, 40));
-			save.setBackground(Theme.current().getInterfaceAccentColor());
-			save.setForeground(Theme.current().getSecondAltBackgroundColor());
 			save.addActionListener(event -> {
 				List<ValidationGroup> errors = new ArrayList<>();
 
@@ -276,8 +274,6 @@ public abstract class ModElementGUI<GE extends GeneratableElement> extends ViewB
 
 			JButton saveOnly = L10N.button("elementgui.save_keep_open");
 			saveOnly.setMargin(new Insets(1, 40, 1, 40));
-			saveOnly.setBackground(Theme.current().getAltBackgroundColor());
-			saveOnly.setForeground(Theme.current().getForegroundColor());
 			saveOnly.addActionListener(event -> {
 				List<ValidationGroup> errors = new ArrayList<>();
 
@@ -334,8 +330,6 @@ public abstract class ModElementGUI<GE extends GeneratableElement> extends ViewB
 		} else {
 			JButton saveOnly = L10N.button("elementgui.save_keep_open");
 			saveOnly.setMargin(new Insets(1, 40, 1, 40));
-			saveOnly.setBackground(Theme.current().getAltBackgroundColor());
-			saveOnly.setForeground(Theme.current().getForegroundColor());
 			saveOnly.addActionListener(event -> {
 				AggregatedValidationResult validationResult = validatePage(0);
 				if (validationResult.validateIsErrorFree())
@@ -346,8 +340,6 @@ public abstract class ModElementGUI<GE extends GeneratableElement> extends ViewB
 
 			JButton save = L10N.button("elementgui.save_mod_element");
 			save.setMargin(new Insets(1, 40, 1, 40));
-			save.setBackground(Theme.current().getInterfaceAccentColor());
-			save.setForeground(Theme.current().getSecondAltBackgroundColor());
 			save.addActionListener(event -> {
 				AggregatedValidationResult validationResult = validatePage(0);
 				if (validationResult.validateIsErrorFree())

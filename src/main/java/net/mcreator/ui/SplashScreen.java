@@ -38,7 +38,7 @@ public class SplashScreen extends JWindow {
 	private final static int EXTEND_BORDER = 3;
 
 	public SplashScreen() {
-		Font splashFont = new Font("Sans-Serif", Font.PLAIN, 13);
+		Font splashFont = new Font("Helvetica Neue", Font.PLAIN, 13);
 
 		SplashScreenPanel imagePanel = new SplashScreenPanel(getSplashImage(false), CORNER_RADIUS, SHADOW_RADIUS,
 				EXTEND_BORDER, (Launcher.version != null && Launcher.version.isSnapshot()), new Color(50, 50, 50));

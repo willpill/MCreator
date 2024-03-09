@@ -126,7 +126,7 @@ public class ConsolePane extends JTextPane {
 		Color fgund = StyleConstants.getForeground(set);
 		String fg = "color:rgb(" + fgund.getRed() + "," + fgund.getGreen() + "," + fgund.getBlue() + ");";
 		return "style=\"" + (StyleConstants.isUnderline(set) ? "text-decoration:underline;" : "") + fg
-				+ "cursor:text;white-space:nowrap;font-size:9px;\"";
+				+ "cursor:text;white-space:nowrap;font-size:11px;\"";
 	}
 
 }
