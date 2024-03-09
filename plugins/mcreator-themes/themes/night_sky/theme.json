@@ -1,0 +1,33 @@
+{
+  "name": "Night Sky",
+  "colorScheme": {
+    "secondAltBackgroundColor": "0x161616",
+    "backgroundColor": "0x212121",
+    "altBackgroundColor": "0x32363a",
+    "altForegroundColor": "0x989898",
+    "foregroundColor": "0xbcbcbc",
+    "interfaceAccentColor": "0x5e9b3f"
+  },
+  "disableMCreatorOverrides": true,
+  "flatLafOverrides" : {
+    "List.focusCellHighlightBorder" : "0,0,0,0",
+    "List.border" : "0,0,0,0",
+    "ScrollPane.border" : "0,0,0,0",
+    "Tree.border" : "0,0,0,0",
+    "SplitPane.border" : "0,0,0,0",
+    "PopupMenu.borderInsets" : "10,10,10,10",
+    "PopupMenu.background" : "#212121",
+    "PopupMenu.borderCornerRadius" : 8,
+    "TextComponent.arc": 8,
+    "MenuItem.selectionArc" : 8,
+    "Button.arc" : 8,
+    "Button.margin" : "2,4,2,4",
+    "Button.innerFocusWidth" : 0,
+    "Button.default.foreground" : "#F3FFED",
+    "ScrollBar.track" : "#00000000",
+    "ScrollBar.thumb" : "#32363a",
+    "TabbedPane.inactiveUnderlineColor" : "#5e9b3f",
+    "TabbedPane.background" : "#00000000",
+    "ToolBar.hoverButtonGroupArc" : 4
+  }
+}
