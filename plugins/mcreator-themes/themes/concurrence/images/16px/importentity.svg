@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .e, .f, .g {
+        stroke-width: 0px;
+      }
+
+      .e, .h {
+        fill: none;
+      }
+
+      .i {
+        clip-path: url(#d);
+      }
+
+      .f {
+        fill: #212121;
+      }
+
+      .g {
+        fill: #dcc600;
+      }
+
+      .h {
+        stroke: #dcc600;
+        stroke-linecap: square;
+      }
+    </style>
+    <clipPath id="d">
+      <rect class="e" x="2.18" y="2.18" width="12.63" height="12.63" rx=".84" ry=".84"/>
+    </clipPath>
+  </defs>
+  <g id="c" data-name="Layer 1">
+    <rect class="h" x=".5" y=".5" width="16" height="16" rx="2.11" ry="2.11"/>
+    <g class="i">
+      <g>
+        <rect class="g" x="2.18" y="5.97" width="12.63" height="8.84"/>
+        <rect class="f" x="1.76" y="1.76" width="13.47" height="4.21"/>
+      </g>
+    </g>
+    <g>
+      <rect class="f" x="3.95" y="4.08" width="3.64" height="3.64" rx=".45" ry=".45"/>
+      <rect class="f" x="9.41" y="4.08" width="3.64" height="3.64" rx=".45" ry=".45"/>
+      <path class="f" d="M6.54,10.65c.08-.13.23-.2.38-.2h3.15c.15,0,.29.08.38.2l1.21,1.82c.2.3-.02.71-.38.71h-5.58c-.36,0-.58-.4-.38-.71l1.21-1.82Z"/>
+    </g>
+  </g>
+</svg>

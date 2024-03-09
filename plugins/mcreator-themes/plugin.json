@@ -1,7 +1,10 @@
 {
-  "id": "themes",
+  "id": "concurrence",
   "weight": 10,
+  "minversion": 202400000000,
   "info": {
-    "name": "MCreator UI theme plugin"
+    "name": "Concurrence Theme",
+    "author": "willpill",
+    "version": "2023.4.1"
   }
 }

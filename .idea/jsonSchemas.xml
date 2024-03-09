@@ -18,6 +18,9 @@
                   <Item>
                     <option name="path" value="plugins/mcreator-themes/themes/night_sky/theme.json" />
                   </Item>
+                  <Item>
+                    <option name="path" value="plugins/mcreator-themes/themes/concurrence/theme.json" />
+                  </Item>
                 </list>
               </option>
             </SchemaInfo>

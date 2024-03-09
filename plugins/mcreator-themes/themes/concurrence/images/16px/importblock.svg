@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="b" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 17 17">
+  <defs>
+    <style>
+      .g {
+        mask: url(#e);
+      }
+
+      .h, .i, .j, .k {
+        stroke-width: 0px;
+      }
+
+      .h, .l {
+        fill: none;
+      }
+
+      .m {
+        clip-path: url(#d);
+      }
+
+      .i {
+        fill: #212121;
+      }
+
+      .j {
+        fill: #dcc600;
+      }
+
+      .k {
+        fill: #fff;
+      }
+
+      .l {
+        stroke: #dcc600;
+        stroke-linecap: square;
+      }
+    </style>
+    <clipPath id="d">
+      <rect class="h" x="2.18" y="2.18" width="12.63" height="12.63" rx=".84" ry=".84"/>
+    </clipPath>
+    <mask id="e" data-name="mask" x="3.91" y="3.08" width="9.19" height="10.56" maskUnits="userSpaceOnUse">
+      <g id="f" data-name="mask0 9276 3262">
+        <path class="k" d="M8.07,3.2l-3.75,2.25c-.25.15-.41.43-.41.72v4.19c0,.33.19.62.49.76l3.75,1.75c.23.11.49.11.71,0l3.75-1.75c.3-.14.49-.44.49-.76v-4.19c0-.3-.16-.57-.41-.72l-3.75-2.25c-.27-.16-.6-.16-.87,0Z"/>
+      </g>
+    </mask>
+  </defs>
+  <g id="c" data-name="Layer 1">
+    <rect class="l" x=".5" y=".5" width="16" height="16" rx="2.11" ry="2.11"/>
+    <g class="m">
+      <g>
+        <rect class="j" x="2.18" y="5.97" width="12.63" height="8.84"/>
+        <rect class="i" x="1.76" y="1.76" width="13.47" height="4.21"/>
+      </g>
+    </g>
+    <g class="g">
+      <g>
+        <path class="j" d="M8.07,3.2l-3.75,2.25c-.25.15-.41.43-.41.72v4.19c0,.33.19.62.49.76l3.75,1.75c.23.11.49.11.71,0l3.75-1.75c.3-.14.49-.44.49-.76v-4.19c0-.3-.16-.57-.41-.72l-3.75-2.25c-.27-.16-.6-.16-.87,0Z"/>
+        <path class="i" d="M8.5,8.21l4.59-2.3v5.65l-4.59,2.08v-5.43Z"/>
+        <path class="i" d="M8.5,8.21l-4.59-2.3v5.65l4.59,2.08v-5.43Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

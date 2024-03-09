@@ -18,6 +18,7 @@
 
 package net.mcreator.ui;
 
+import com.formdev.flatlaf.FlatClientProperties;
 import net.mcreator.Launcher;
 import net.mcreator.generator.IGeneratorProvider;
 import net.mcreator.generator.setup.WorkspaceGeneratorSetup;
@@ -145,8 +146,9 @@ public final class MCreator extends JFrame implements IWorkspaceProvider, IGener
 			getRootPane().putClientProperty("apple.awt.fullscreenable", true);
 			getRootPane().putClientProperty("apple.awt.fullWindowContent", true);
 			getRootPane().putClientProperty("apple.awt.transparentTitleBar", true);
-			getRootPane().setBorder(
-					BorderFactory.createEmptyBorder(29, 0, 0, 0));
+			getRootPane().putClientProperty("apple.awt.windowTitleVisible", false);
+			getRootPane().putClientProperty(FlatClientProperties.MACOS_WINDOW_BUTTONS_SPACING,
+					FlatClientProperties.MACOS_WINDOW_BUTTONS_SPACING_LARGE );
 		}
 
 		if (PreferencesManager.PREFERENCES.hidden.fullScreen.get())

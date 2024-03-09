@@ -1,12 +1,12 @@
 {
-  "name": "Night Sky",
+  "name": "Concurrence",
   "colorScheme": {
     "secondAltBackgroundColor": "0x161616",
     "backgroundColor": "0x212121",
     "altBackgroundColor": "0x32363a",
     "altForegroundColor": "0x989898",
     "foregroundColor": "0xbcbcbc",
-    "interfaceAccentColor": "0x5e9b3f"
+    "interfaceAccentColor": "0xb08417"
   },
   "disableMCreatorOverrides": true,
   "flatLafOverrides" : {
@@ -26,7 +26,7 @@
     "Button.default.foreground" : "#F3FFED",
     "ScrollBar.track" : "#00000000",
     "ScrollBar.thumb" : "#32363a",
-    "TabbedPane.inactiveUnderlineColor" : "#5e9b3f",
+    "TabbedPane.inactiveUnderlineColor" : "#b08417",
     "TabbedPane.background" : "#00000000",
     "ToolBar.hoverButtonGroupArc" : 4
   }
