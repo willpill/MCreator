@@ -139,7 +139,7 @@ public class AnimationMakerView extends ViewBase {
 
 		JComponent stp = PanelUtils.centerInPanel(settings);
 		stp.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("dialog.animation_maker.settings"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -218,7 +218,7 @@ public class AnimationMakerView extends ViewBase {
 		JPanel timelinee = new JPanel(new BorderLayout());
 		timelinee.setOpaque(false);
 		timelinee.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("dialog.animation_maker.animation_timeline"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 

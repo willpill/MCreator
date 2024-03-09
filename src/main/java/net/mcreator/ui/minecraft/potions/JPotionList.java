@@ -37,7 +37,7 @@ public class JPotionList extends JSimpleEntriesList<JPotionListEntry, Potion.Cus
 		add.setText(L10N.t("elementgui.potion.add_entry"));
 
 		setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.potion.effects"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 	}

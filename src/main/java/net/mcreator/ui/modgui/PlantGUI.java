@@ -309,7 +309,7 @@ public class PlantGUI extends ModElementGUI<Plant> {
 		texturesAndRent.add("East", PanelUtils.centerAndSouthElement(rent, specialInformation, 2, 2));
 
 		texturesAndRent.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.plant.textures_and_model"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -344,7 +344,7 @@ public class PlantGUI extends ModElementGUI<Plant> {
 
 		JPanel ptipe1 = new JPanel(new BorderLayout(5, 5));
 		ptipe1.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.plant.type_static"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -364,7 +364,7 @@ public class PlantGUI extends ModElementGUI<Plant> {
 
 		JPanel ptipe2 = new JPanel(new BorderLayout(5, 5));
 		ptipe2.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.plant.type_growable"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -377,7 +377,7 @@ public class PlantGUI extends ModElementGUI<Plant> {
 
 		JPanel ptipe3 = new JPanel(new BorderLayout(5, 5));
 		ptipe3.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.plant.type_double"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 		ptipe3.add("North", doubleType);
@@ -428,21 +428,21 @@ public class PlantGUI extends ModElementGUI<Plant> {
 
 		JPanel selp = new JPanel(new GridLayout(9, 2, 5, 2));
 		selp.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_general"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 		selp.setOpaque(false);
 
 		JPanel selp2 = new JPanel(new GridLayout(6, 2, 5, 2));
 		selp2.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_dropping"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 		selp2.setOpaque(false);
 
 		JPanel soundProperties = new JPanel(new GridLayout(7, 2, 0, 2));
 		soundProperties.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_sound"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 		soundProperties.setOpaque(false);
@@ -575,7 +575,7 @@ public class PlantGUI extends ModElementGUI<Plant> {
 
 		JComponent bonemealMerger = PanelUtils.northAndCenterElement(bonemealPanel, bonemealEvents, 2, 2);
 		bonemealMerger.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_bonemeal"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -629,7 +629,7 @@ public class PlantGUI extends ModElementGUI<Plant> {
 		JComponent plocb = PanelUtils.northAndCenterElement(advancedProperties,
 				PanelUtils.westAndCenterElement(new JEmptyBox(5, 5), placingCondition), 2, 2);
 		plocb.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.plant.properties_advanced_plant"), TitledBorder.LEADING,
 				TitledBorder.DEFAULT_POSITION, getFont(), Theme.current().getForegroundColor()));
 		plocb.setOpaque(false);

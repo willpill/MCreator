@@ -86,7 +86,7 @@ public class ItemExtensionGUI extends ModElementGUI<ItemExtension> {
 
 		JComponent fuelPanel = PanelUtils.northAndCenterElement(fuelTopPanel, fuelSuccessCondition, 0, 2);
 		fuelPanel.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.item_extension.fuel_properties"), TitledBorder.LEADING,
 				TitledBorder.DEFAULT_POSITION, getFont(), Theme.current().getForegroundColor()));
 
@@ -95,7 +95,7 @@ public class ItemExtensionGUI extends ModElementGUI<ItemExtension> {
 				HelpUtils.wrapWithHelpButton(this.withEntry("item_extension/layer_chance"),
 						L10N.label("elementgui.item_extension.layer_chance")), compostLayerChance);
 		compostPanel.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.item_extension.compost_properties"), TitledBorder.LEADING,
 				TitledBorder.DEFAULT_POSITION, getFont(), Theme.current().getForegroundColor()));
 
@@ -123,7 +123,7 @@ public class ItemExtensionGUI extends ModElementGUI<ItemExtension> {
 		JComponent dispenserBehaviourPanel = PanelUtils.gridElements(3, 1, 0, 2, canDispense, dispenseSuccessCondition,
 				dispenseResultItemstack);
 		dispenserBehaviourPanel.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.item_extension.dispense_properties"), TitledBorder.LEADING,
 				TitledBorder.DEFAULT_POSITION, getFont(), Theme.current().getForegroundColor()));
 

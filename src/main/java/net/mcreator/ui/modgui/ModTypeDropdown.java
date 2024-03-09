@@ -36,7 +36,7 @@ import java.util.stream.Collectors;
 public class ModTypeDropdown extends JPopupMenu {
 
 	public ModTypeDropdown(MCreator mcreator) {
-		setBorder(BorderFactory.createEmptyBorder());
+		setBorder(BorderFactory.createEmptyBorder(10,10,10,10));
 
 		List<ModElementType<?>> types = ModElementTypeLoader.REGISTRY.stream()
 				.sorted(Comparator.comparing(ModElementType::getReadableName))

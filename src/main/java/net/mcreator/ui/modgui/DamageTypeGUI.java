@@ -36,6 +36,7 @@ import net.mcreator.workspace.elements.ModElement;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import javax.swing.*;
+import javax.swing.border.Border;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
 import java.net.URI;
@@ -66,7 +67,7 @@ public class DamageTypeGUI extends ModElementGUI<DamageType> {
 
 		JPanel damageProperties = new JPanel(new GridLayout(3, 2, 20, 2));
 		damageProperties.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.damagetype.damage_properties"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 		damageProperties.setOpaque(false);
@@ -87,7 +88,7 @@ public class DamageTypeGUI extends ModElementGUI<DamageType> {
 
 		JPanel localizationPanel = new JPanel(new GridLayout(3, 2, 20, 2));
 		localizationPanel.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.damagetype.death_messages"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 		localizationPanel.setOpaque(false);

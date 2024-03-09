@@ -488,7 +488,7 @@ public class BlockGUI extends ModElementGUI<Block> {
 		JPanel txblock4 = new JPanel(new BorderLayout());
 		txblock4.setOpaque(false);
 		txblock4.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.block_base_item_texture"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -508,7 +508,7 @@ public class BlockGUI extends ModElementGUI<Block> {
 		plantsGrowOn.setOpaque(false);
 
 		sbbp22.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.block_textures"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -519,7 +519,7 @@ public class BlockGUI extends ModElementGUI<Block> {
 
 		JComponent txblock3 = PanelUtils.gridElements(1, 1, specialInformation);
 		txblock3.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.special_information"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -598,15 +598,15 @@ public class BlockGUI extends ModElementGUI<Block> {
 		topnbot.add("South", PanelUtils.northAndCenterElement(tintPanel, txblock4));
 
 		rent.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.render_type"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 		transparencySettings.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.transparency"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 		tintPanel.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.block_tint"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -864,21 +864,21 @@ public class BlockGUI extends ModElementGUI<Block> {
 		});
 
 		selp.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_general"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 		selp3.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_dropping"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 
 		soundProperties.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_sound"), TitledBorder.LEADING, TitledBorder.DEFAULT_POSITION,
 				getFont(), Theme.current().getForegroundColor()));
 
 		advancedWithCondition.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.properties_advanced_block"), TitledBorder.LEADING,
 				TitledBorder.DEFAULT_POSITION, getFont(), Theme.current().getForegroundColor()));
 
@@ -1001,12 +1001,12 @@ public class BlockGUI extends ModElementGUI<Block> {
 		fluidTank.setOpaque(false);
 
 		energyStorage.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.energy_storage"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
 		fluidTank.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.fluid_tank"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -1054,7 +1054,7 @@ public class BlockGUI extends ModElementGUI<Block> {
 		refreshFieldsTileEntity();
 
 		props.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.settings_inventory"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -1110,7 +1110,7 @@ public class BlockGUI extends ModElementGUI<Block> {
 		JComponent redstoneMerger = PanelUtils.northAndCenterElement(redstoneParameters, emittedRedstonePower, 2, 2);
 
 		redstoneMerger.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.block.properties_redstone"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
@@ -1133,7 +1133,7 @@ public class BlockGUI extends ModElementGUI<Block> {
 
 		JComponent bonemealMerger = PanelUtils.northAndCenterElement(bonemealPanel, bonemealEvents, 2, 2);
 		bonemealMerger.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.common.properties_bonemeal"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 

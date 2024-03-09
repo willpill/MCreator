@@ -117,7 +117,7 @@ public class JItemPropertiesStatesList extends JEntriesList {
 		scrollProperties.setOpaque(false);
 		scrollProperties.getViewport().setOpaque(false);
 		scrollProperties.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.item.custom_properties.title"), 0, 0, scrollProperties.getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 		JPanel left = new JPanel(new BorderLayout());
@@ -141,7 +141,7 @@ public class JItemPropertiesStatesList extends JEntriesList {
 		scrollStates.setOpaque(false);
 		scrollStates.getViewport().setOpaque(false);
 		scrollStates.setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.item.custom_states.title"), 0, 0, scrollStates.getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 		JPanel right = new JPanel(new BorderLayout());

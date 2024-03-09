@@ -39,7 +39,7 @@ public class JModelLayerList extends JSimpleEntriesList<JModelLayerListEntry, Li
 
 		setBorder(BorderFactory.createCompoundBorder(BorderFactory.createEmptyBorder(2, 2, 2, 2),
 				BorderFactory.createCompoundBorder(
-						BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+						BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 						BorderFactory.createEmptyBorder(2, 2, 2, 2))));
 	}
 

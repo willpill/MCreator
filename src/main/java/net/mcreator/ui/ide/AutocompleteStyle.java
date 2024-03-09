@@ -54,7 +54,6 @@ class AutocompleteStyle {
 				list.setBackground(Theme.current().getBackgroundColor());
 
 				JWindow autoCompletePopupWindow = (JWindow) field.get(ac);
-				autoCompletePopupWindow.setOpacity(0.93f);
 				((JPanel) autoCompletePopupWindow.getContentPane()).setBorder(null);
 				Component[] components = autoCompletePopupWindow.getContentPane().getComponents();
 				for (Component com : components) {
@@ -63,7 +62,7 @@ class AutocompleteStyle {
 					if (com instanceof JScrollPane pane) {
 						pane.setBackground(Theme.current().getBackgroundColor());
 						pane.setBorder(
-								BorderFactory.createMatteBorder(0, 3, 0, 0, Theme.current().getBackgroundColor()));
+								BorderFactory.createMatteBorder(5, 5, 5, 5, Theme.current().getBackgroundColor()));
 						JPanel dummyCorner = new JPanel();
 						dummyCorner.setBackground(Theme.current().getInterfaceAccentColor());
 						pane.setCorner(JScrollPane.LOWER_RIGHT_CORNER, dummyCorner);
@@ -80,10 +79,9 @@ class AutocompleteStyle {
 						descWindow.getContentPane().remove(component);
 				});
 
-				descWindow.setOpacity(0.85f);
-				descWindow.setSize(390, 220);
+				descWindow.setSize(400, 100);
 				((JPanel) descWindow.getContentPane()).setBorder(
-						BorderFactory.createLineBorder(Theme.current().getSecondAltBackgroundColor()));
+						BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor()));
 
 			} catch (ClassNotFoundException | SecurityException | IllegalArgumentException | IllegalAccessException |
 					 NoSuchFieldException e1) {

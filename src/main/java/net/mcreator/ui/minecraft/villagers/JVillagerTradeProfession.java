@@ -102,7 +102,7 @@ public class JVillagerTradeProfession extends JEntriesList {
 		add("Center", entries);
 
 		setBorder(BorderFactory.createTitledBorder(
-				BorderFactory.createLineBorder(Theme.current().getForegroundColor(), 1),
+				BorderFactory.createLineBorder(Theme.current().getAltBackgroundColor(), 1),
 				L10N.t("elementgui.villager_trade.profession_trades"), 0, 0, getFont().deriveFont(12.0f),
 				Theme.current().getForegroundColor()));
 
