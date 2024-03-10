@@ -151,7 +151,7 @@ public final class WorkspaceSelector extends JFrame implements DropTargetListene
 		SocialButtons socialButtons = new SocialButtons();
 		logoPanel.add("Center", PanelUtils.centerInPanel(socialButtons));
 
-		logoPanel.setBorder(BorderFactory.createEmptyBorder(30, 0, 0, 0));
+		logoPanel.setBorder(BorderFactory.createEmptyBorder(20, 0, 0, 0));
 
 		JPanel southcenter = new JPanel(new FlowLayout(FlowLayout.RIGHT));
 
@@ -238,6 +238,7 @@ public final class WorkspaceSelector extends JFrame implements DropTargetListene
 		norecents.setForeground(Theme.current().getAltForegroundColor());
 
 		recentsList.setBackground(Theme.current().getSecondAltBackgroundColor());
+		recentsList.setBorder(BorderFactory.createEmptyBorder(0,7,0,7));
 		recentsList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		recentsList.addMouseListener(new MouseAdapter() {
 			@Override public void mouseClicked(MouseEvent mouseEvent) {

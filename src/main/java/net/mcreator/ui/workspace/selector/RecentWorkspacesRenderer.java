@@ -27,10 +27,26 @@ import net.mcreator.util.image.ImageUtils;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.AffineTransform;
+import java.awt.image.BufferedImage;
 import java.util.Objects;
 
-class RecentWorkspacesRenderer extends JPanel implements ListCellRenderer<RecentWorkspaceEntry> {
+class RoundedPanel extends JPanel {
+	public RoundedPanel(LayoutManager layout) {
+		super(layout);
+		setOpaque(false);
+	}
+
+	@Override
+	protected void paintComponent(Graphics g) {
+		super.paintComponent(g);
+		Graphics2D g2d = (Graphics2D) g;
+		g2d.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
+		g2d.setColor(getBackground());
+		g2d.fillRoundRect(0, 0, getWidth()-1, getHeight()-1, 10, 10);
+	}
+}
+
+class RecentWorkspacesRenderer extends RoundedPanel implements ListCellRenderer<RecentWorkspaceEntry> {
 	private final JLabel nameLabel = new JLabel();
 	private final JLabel pathLabel = new JLabel();
 	private final JLabel iconLabel = new JLabel();
@@ -40,7 +56,7 @@ class RecentWorkspacesRenderer extends JPanel implements ListCellRenderer<Recent
 
 		setBackground(Theme.current().getSecondAltBackgroundColor());
 
-		nameLabel.setFont(getFont().deriveFont(20.0f));
+		nameLabel.setFont(getFont().deriveFont(17.0f).deriveFont(Font.BOLD));
 		pathLabel.setFont(getFont().deriveFont(11.0f));
 
 		add("West", iconLabel);
@@ -58,13 +74,12 @@ class RecentWorkspacesRenderer extends JPanel implements ListCellRenderer<Recent
 
 		setToolTipText(L10N.t("dialog.workspace_selector.recent_workspace", value.getName(), path,
 				Objects.requireNonNullElse(value.getMCRVersion(), L10N.t("common.not_applicable"))));
-		setBorder(BorderFactory.createEmptyBorder(2, 14, 4, 0));
+		setBorder(BorderFactory.createEmptyBorder(6, 12, 8, 6));
 
 		if (value.getType() != GeneratorFlavor.UNKNOWN) {
-			ImageIcon icon = new ImageIcon(
-					ImageUtils.darken(ImageUtils.toBufferedImage(value.getType().getIcon().getImage())));
-			iconLabel.setIcon(
-					isSelected ? ImageUtils.colorize(icon, Color.WHITE, true) : ImageUtils.colorize(icon, Theme.current().getAltForegroundColor(), true));
+			BufferedImage bufferedIcon = ImageUtils.toBufferedImage(value.getType().getIcon().getImage());
+			iconLabel.setIcon (
+					isSelected ? new ImageIcon(bufferedIcon) : new ImageIcon(ImageUtils.darken(bufferedIcon)));
 			nameLabel.setText(StringUtils.abbreviateString(value.getName(), 17));
 			pathLabel.setText(StringUtils.abbreviateStringInverse(path, 26));
 		} else {
