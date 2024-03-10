@@ -6,7 +6,7 @@
     "altBackgroundColor": "0x32363a",
     "altForegroundColor": "0x989898",
     "foregroundColor": "0xbcbcbc",
-    "interfaceAccentColor": "0xc78100"
+    "interfaceAccentColor": "0xc47700"
   },
   "disableMCreatorOverrides": true,
   "flatLafOverrides" : {
@@ -25,8 +25,8 @@
     "Button.innerFocusWidth" : 0,
     "Button.default.foreground" : "#F3FFED",
     "ScrollBar.track" : "#00000000",
-    "ScrollBar.thumb" : "#32363a",
-    "TabbedPane.inactiveUnderlineColor" : "#c78100",
+    "ScrollBar.thumb" : "#C47700",
+    "TabbedPane.inactiveUnderlineColor" : "#CD8618",
     "TabbedPane.background" : "#00000000",
     "ToolBar.hoverButtonGroupArc" : 4
   }
