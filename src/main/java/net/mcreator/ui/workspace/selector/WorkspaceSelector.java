@@ -139,7 +139,7 @@ public final class WorkspaceSelector extends JFrame implements DropTargetListene
 		});
 
 		JPanel logoPanel = new JPanel(new BorderLayout(5, 5));
-		JLabel logo = new JLabel(UIRES.SVG.getBuiltIn("logo", 250, (int) (250 * (63 / 350.0))));
+		JLabel logo = new JLabel(UIRES.SVG.getBuiltIn("logo", 250, (int) (250 * (63 / 350.0)) - 3));
 		logo.setCursor(new Cursor(Cursor.HAND_CURSOR));
 		logo.addMouseListener(new MouseAdapter() {
 			@Override public void mouseClicked(MouseEvent mouseEvent) {

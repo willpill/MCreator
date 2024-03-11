@@ -25,7 +25,7 @@
     "Button.innerFocusWidth" : 0,
     "Button.default.foreground" : "#F3FFED",
     "ScrollBar.track" : "#00000000",
-    "ScrollBar.thumb" : "#C47700",
+    "ScrollBar.thumb" : "#32363a",
     "TabbedPane.inactiveUnderlineColor" : "#CD8618",
     "TabbedPane.background" : "#00000000",
     "ToolBar.hoverButtonGroupArc" : 4
