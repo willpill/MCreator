@@ -1,17 +1,15 @@
 {
   "name": "Concurrence",
   "colorScheme": {
-    "secondAltBackgroundColor": "0x161616",
-    "backgroundColor": "0x212121",
-    "altBackgroundColor": "0x32363a",
-    "altForegroundColor": "0x989898",
+    "backgroundColor": "0x1A1A1A",
+    "altBackgroundColor": "0x2A2D30",
+    "secondAltBackgroundColor": "0x141414",
     "foregroundColor": "0xbcbcbc",
-    "interfaceAccentColor": "0xc47700"
+    "altForegroundColor": "0x989898",
+    "interfaceAccentColor": "0x50823E"
   },
   "disableMCreatorOverrides": true,
   "flatLafOverrides" : {
-    "List.focusCellHighlightBorder" : "0,0,0,0",
-    "List.border" : "0,0,0,0",
     "ScrollPane.border" : "0,0,0,0",
     "Tree.border" : "0,0,0,0",
     "SplitPane.border" : "0,0,0,0",
@@ -24,9 +22,16 @@
     "Button.margin" : "2,4,2,4",
     "Button.innerFocusWidth" : 0,
     "Button.default.foreground" : "#F3FFED",
+    "ComboBox.selectionForeground" : "#F3FFED",
+    "List.selectionForeground" : "#F3FFED",
+    "List.selectionInactiveForeground" : "#F3FFED",
+    "List.focusCellHighlightBorder" : "0,0,0,0",
+    "List.border" : "0,0,0,0",
+    "MenuItem.selectionForeground" : "#F3FFED",
+    "MenuItem.selectionBackground" : "#46464B",
     "ScrollBar.track" : "#00000000",
     "ScrollBar.thumb" : "#32363a",
-    "TabbedPane.inactiveUnderlineColor" : "#CD8618",
+    "TabbedPane.inactiveUnderlineColor" : "#50823E",
     "TabbedPane.background" : "#00000000",
     "ToolBar.hoverButtonGroupArc" : 4
   }

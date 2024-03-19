@@ -269,7 +269,7 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 			setOpaque(isSelected);
 			setBorder(null);
 			Color col = value.getColor();
-			setBackground(isSelected ? col : Theme.current().getBackgroundColor());
+			setBackground(isSelected ? col : Theme.current().getSecondAltBackgroundColor());
 			setForeground(isSelected ? Theme.current().getForegroundColor() : col.brighter());
 			ComponentUtils.deriveFont(this, 14);
 			setText(value.getName());
@@ -284,7 +284,7 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 				int index, boolean isSelected, boolean cellHasFocus) {
 			setOpaque(isSelected);
 			setBorder(null);
-			setBackground(isSelected ? value.getType().getBlocklyColor() : Theme.current().getBackgroundColor());
+			setBackground(isSelected ? value.getType().getBlocklyColor() : Theme.current().getSecondAltBackgroundColor());
 			setForeground(isSelected ? Theme.current().getForegroundColor() : value.getType().getBlocklyColor());
 			ComponentUtils.deriveFont(this, 14);
 			setText(value.getName());
@@ -318,7 +318,7 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 		returnType.add("Center", returnTypeLabel);
 
 		returnTypeLabel.setOpaque(true);
-		returnTypeLabel.setBackground(Theme.current().getBackgroundColor());
+		returnTypeLabel.setBackground(Theme.current().getSecondAltBackgroundColor());
 		returnTypeLabel.setBorder(BorderFactory.createEmptyBorder(0, 7, 9, 0));
 		ComponentUtils.deriveFont(returnType, 13);
 
@@ -330,13 +330,13 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 
 		JPanel rettypeHeader = new JPanel(new GridLayout());
 		rettypeHeader.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 0));
-		rettypeHeader.setBackground(Theme.current().getBackgroundColor());
+		rettypeHeader.setBackground(Theme.current().getSecondAltBackgroundColor());
 		rettypeHeader.add(bar4);
 		returnType.add("North", rettypeHeader);
 		returnType.setOpaque(false);
 		returnType.setPreferredSize(new Dimension(150, 46));
 
-		returnType.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Theme.current().getAltBackgroundColor()));
+		returnType.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Theme.current().getSecondAltBackgroundColor()));
 
 		triggerInfoPanel.setOpaque(false);
 		triggerInfoPanel.setBorder(BorderFactory.createEmptyBorder(0, 5, 5, 0));
@@ -348,7 +348,7 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 		localVarsPan.setOpaque(false);
 
 		JScrollPane scrollPane = new JScrollPane(localVarsList);
-		scrollPane.setBackground(Theme.current().getBackgroundColor());
+		scrollPane.setBackground(Theme.current().getSecondAltBackgroundColor());
 		scrollPane.getViewport().setOpaque(false);
 		scrollPane.getVerticalScrollBar().setUnitIncrement(11);
 		scrollPane.getHorizontalScrollBar().setUnitIncrement(11);
@@ -459,7 +459,7 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 
 		JPanel varHeader = new JPanel(new GridLayout());
 		varHeader.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 0));
-		varHeader.setBackground(Theme.current().getBackgroundColor());
+		varHeader.setBackground(Theme.current().getSecondAltBackgroundColor());
 		varHeader.add(PanelUtils.northAndCenterElement(ComponentUtils.deriveFont(lab, 13), bar));
 		localVarsPan.add("North", varHeader);
 		localVarsPan.setOpaque(false);
@@ -476,16 +476,16 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 
 		JPanel depsHeader = new JPanel(new BorderLayout());
 		depsHeader.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 0));
-		depsHeader.setBackground(Theme.current().getBackgroundColor());
+		depsHeader.setBackground(Theme.current().getSecondAltBackgroundColor());
 		depsHeader.add("North", bar2);
 		depsHeader.add("South", ComponentUtils.deriveFont(depsWarningLabel, 11));
 
 		depsPan.add("North", depsHeader);
 		depsPan.setOpaque(false);
-		depsPan.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Theme.current().getAltBackgroundColor()));
+		depsPan.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Theme.current().getSecondAltBackgroundColor()));
 
 		JScrollPane scrollPaneDeps = new JScrollPane(dependenciesList);
-		scrollPaneDeps.setBackground(Theme.current().getBackgroundColor());
+		scrollPaneDeps.setBackground(Theme.current().getSecondAltBackgroundColor());
 		scrollPaneDeps.getViewport().setOpaque(false);
 		scrollPaneDeps.getVerticalScrollBar().setUnitIncrement(11);
 		scrollPaneDeps.getHorizontalScrollBar().setUnitIncrement(11);
@@ -501,15 +501,15 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 
 		JPanel extdepsHeader = new JPanel(new BorderLayout());
 		extdepsHeader.setBorder(BorderFactory.createEmptyBorder(0, 5, 0, 0));
-		extdepsHeader.setBackground(Theme.current().getBackgroundColor());
+		extdepsHeader.setBackground(Theme.current().getSecondAltBackgroundColor());
 		extdepsHeader.add("North", bar3);
 
 		triggerDepsPan.add("North", extdepsHeader);
-		triggerDepsPan.setBackground(Theme.current().getBackgroundColor());
-		triggerDepsPan.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Theme.current().getAltBackgroundColor()));
+		triggerDepsPan.setBackground(Theme.current().getSecondAltBackgroundColor());
+		triggerDepsPan.setBorder(BorderFactory.createMatteBorder(1, 0, 0, 0, Theme.current().getSecondAltBackgroundColor()));
 
 		JScrollPane scrollPaneExtDeps = new JScrollPane(dependenciesExtTrigList);
-		scrollPaneExtDeps.setBackground(Theme.current().getBackgroundColor());
+		scrollPaneExtDeps.setBackground(Theme.current().getSecondAltBackgroundColor());
 		scrollPaneExtDeps.getViewport().setOpaque(false);
 		scrollPaneExtDeps.getVerticalScrollBar().setUnitIncrement(11);
 		scrollPaneExtDeps.getHorizontalScrollBar().setUnitIncrement(11);
@@ -524,8 +524,8 @@ public class ProcedureGUI extends ModElementGUI<net.mcreator.element.types.Proce
 
 		JPanel eastPan = new JPanel();
 		eastPan.setLayout(new BoxLayout(eastPan, BoxLayout.PAGE_AXIS));
-		eastPan.setBackground(Theme.current().getBackgroundColor());
-		eastPan.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Theme.current().getBackgroundColor()));
+		eastPan.setBackground(Theme.current().getSecondAltBackgroundColor());
+		eastPan.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, Theme.current().getSecondAltBackgroundColor()));
 
 		eastPan.add(localVarsPan);
 		eastPan.add(depsPan);

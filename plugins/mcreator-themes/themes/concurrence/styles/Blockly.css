@@ -1,17 +1,17 @@
 body {
-    fill: #424242;
+    fill: #1A1A1A;
 }
 
 #blockly {
-    background: #424242;
+    background: #1A1A1A;
 }
 
 .blocklySvg {
-    background-color: #424242 !important;
+    background-color: #1A1A1A !important;
 }
 
 .blocklyMainBackground {
-    fill: #424242 !important;
+    fill: #1A1A1A !important;
 }
 
 ::-webkit-scrollbar-track {
@@ -23,21 +23,21 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #323232;
+    background: #232323;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #424242;
+    background: #1A1A1A;
 }
 
 .blocklyToolboxDiv {
-    background-color: #323232;
+    background-color: #232323;
     color: white;
 }
 
 .blocklyTreeRow:not(.blocklyTreeSelected):hover {
     background-color: #e4e4e4 !important;
-    color: #323232 !important;
+    color: #232323 !important;
 }
 
 .blocklyTreeSeparator {
@@ -45,11 +45,11 @@ body {
 }
 
 .blocklyFlyout {
-    background-color: #323232c2;
+    background-color: #232323c2;
 }
 
 .blocklyScrollbarVertical .blocklyScrollbarHandle {
-    fill: #323232;
+    fill: #232323;
 }
 
 .blocklyScrollbarVertical:hover .blocklyScrollbarHandle {
@@ -57,7 +57,7 @@ body {
 }
 
 .blocklyScrollbarHorizontal .blocklyScrollbarHandle {
-    fill: #323232;
+    fill: #232323;
 }
 
 .blocklyScrollbarHorizontal:hover .blocklyScrollbarHandle {
@@ -78,12 +78,12 @@ body {
 }
 
 .blocklyTooltipDiv {
-    background-color: #323232;
+    background-color: #232323;
     color: white;
 }
 
 .blocklyWidgetDiv .goog-menu {
-    background: #323232 !important;
+    background: #232323 !important;
     border-color: #505050 !important;
 }
 
@@ -107,6 +107,6 @@ body {
 }
 
 .blocklyHtmlTextAreaInput {
-    background: #323232;
+    background: #232323;
     color: white;
 }
